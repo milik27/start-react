@@ -1,12 +1,13 @@
 {
   "name": "social-network",
   "version": "1.0.0",
-  "repository": "git@github.com:milik27/social-network.git",
   "author": "Nikita <nikitati27@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -25,6 +26,10 @@
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@babel/runtime": "^7.12.5",
+    "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-links": "^6.1.17",
+    "@storybook/react": "^6.1.17",
     "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -41,7 +46,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
     "fork-ts-checker-webpack-plugin": "^6.1.0",
-    "html-webpack-plugin": "^4.5.1",
+    "html-webpack-plugin": "^5.0.0-beta.6",
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3",
