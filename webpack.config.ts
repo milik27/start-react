@@ -1,6 +1,7 @@
 import webpack from "webpack"
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
+import Dotenv from 'dotenv-webpack'
 import { build } from './config/paths'
 
 const config: webpack.Configuration = {
@@ -44,6 +45,7 @@ const config: webpack.Configuration = {
         files: "./src/**/*",
       },
     }),
+    new Dotenv(),
   ],
   devServer: {
     contentBase: build,
