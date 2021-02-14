@@ -23,7 +23,7 @@ Runs the app in the storybook.<br />
 Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
 ### `build-storybook`
-Builds storybook.
+Builds storybook to the `storybook-static` folder.
 
 ### `yarn test`
 Launches the test runner in the interactive watch mode.
