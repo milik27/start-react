@@ -32,7 +32,7 @@ const config: webpack.Configuration = {
   },
   output: {
     path: build,
-    filename: "bundle.js",
+    filename: "bundle.[hash:8].js",
   },
   plugins: [
     new HtmlWebpackPlugin({
